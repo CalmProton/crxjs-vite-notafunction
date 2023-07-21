@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Extension",
+  "description": "a",
+  "version": "0.0.1",
+
+  "background": {
+    "service_worker": "background.ts"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "cookies",
+    "scripting",
+    "activeTab",
+    "unlimitedStorage",
+    "identity",
+    "identity.email",
+    "storage",
+    "webRequest",
+    "notifications"
+  ],
+  "host_permissions": ["https://google.com/*"],
+
+  "action": {
+    "default_title": "Extension",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "src/assets/icons/icon-16x16.png",
+      "48": "src/assets/icons/icon-32x32.png",
+      "128": "src/assets/icons/icon-128x128.png",
+      "256": "src/assets/icons/icon-256x256.png"
+    }
+  },
+  "icons": {
+    "16": "src/assets/icons/icon-16x16.png",
+    "48": "src/assets/icons/icon-32x32.png",
+    "128": "src/assets/icons/icon-128x128.png",
+    "256": "src/assets/icons/icon-256x256.png"
+  }
+}
